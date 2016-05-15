@@ -1,0 +1,15 @@
+{
+  "name": "webtools-elm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "chokidar 'src/**/*.elm' -c 'elm make src/Main.elm --output dest/bundle.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "elm": "^0.17.0"
+  }
+}
