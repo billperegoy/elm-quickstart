@@ -7,11 +7,17 @@ Elm application. It sets up the following:
 * npm setup to run build or tests.
 
 To use this repository, you should follow these steps.
+
 1. npm install -g elm
+
 2. npm install -g elm-live
+
 3. npm install -g elm-test
+
 4. npm install
+
 5. npm run test
+
 6. npm run watch
 
 The *watch* step will run the elm-live build process and launch the browser.
