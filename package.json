@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "chokidar 'src/**/*.elm' -c 'elm make src/**/*.elm --output dest/bundle.js'"
+    "watch": "elm-live src/*.elm --open --pushstate --output dist/bundle.js",
+    "test": "elm-test"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "chokidar-cli": "^1.2.0",
-    "elm": "^0.17.0"
+    "elm": "^0.17.1",
+    "elm-live": "^2.6.0",
+    "elm-test": "^0.17.3"
   }
 }
