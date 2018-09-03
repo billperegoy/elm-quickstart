@@ -12,7 +12,7 @@ To use this repository, you should follow these steps.
 
 2. npm install -g elm-live
 
-3. npm install -g elm-test
+3. npm install -g elm-test@0.19.0-beta6
 
 4. npm install
 

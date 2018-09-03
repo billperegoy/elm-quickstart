@@ -1,18 +1,23 @@
 module Main exposing (..)
 
+import Browser
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Utils
 
 
-main : Program Never Model Msg
+main : Program Flags Model Msg
 main =
-    Html.program
+    Browser.element
         { init = init
         , view = view
         , update = update
         , subscriptions = subscriptions
         }
+
+
+type alias Flags =
+    ()
 
 
 
@@ -23,9 +28,9 @@ type alias Model =
     { name : String }
 
 
-init : ( Model, Cmd Msg )
-init =
-    Model "world" ! []
+init : Flags -> ( Model, Cmd Msg )
+init flags =
+    ( Model "world", Cmd.none )
 
 
 
@@ -40,7 +45,7 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         NoOp ->
-            model ! []
+            ( model, Cmd.none )
 
 
 
